@@ -5,7 +5,6 @@ const controller = new Negociacao_Controller();
 const form : Element = document.querySelector(".form");
 
 form.addEventListener("submit", (event : Event) => {
-  // toda vez que for chamado o submit esse evento ocorrerá
-  event.preventDefault(); // evita o refresh da página
+  event.preventDefault();
   controller.adicionar();
 });
